@@ -13,6 +13,6 @@ export class Order {
     @Prop({ required: true })
     products: {
         productId: string;
-        amount: string;
+        amount: number;
     }
 }

@@ -2,6 +2,6 @@ export class Order {
     customerId: string;
     products: {
         productId: string;
-        amount: string;
+        amount: number;
     };
 }
