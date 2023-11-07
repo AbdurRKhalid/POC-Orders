@@ -21,4 +21,8 @@ export class OrderService {
     delete(id: string) {
         return this.orderModel.deleteOne({_id: id});
     }
+
+    findOne(id: string): Promise<OrderDocument> {
+        return this.orderModel.findById(id);
+    }
 }
