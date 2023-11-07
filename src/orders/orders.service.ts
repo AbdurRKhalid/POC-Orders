@@ -13,4 +13,8 @@ export class OrderService {
         const order = new this.orderModel(addOrderDto);
         return order.save();
     }
+
+    findOrders(): Promise<OrderDocument[]> {
+        return this.orderModel.find();
+    }
 }
